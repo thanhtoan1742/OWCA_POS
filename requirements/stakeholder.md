@@ -27,18 +27,10 @@ the project
     - Internal stakeholder
     - Roles: managing, developing, testings, ... the software.
 
-- Clerks
-    - External Stakeholder
-    - Roles: interacting with the software (serving food).
-
-- Kitchen staff
-    - External Stakeholder
-    - Roles: interacting with software (making food).
-
-- Customers / Diners
-    - External Stakeholder
-    - Roles: using software.
-
-- 'Bank ?'
+- Bank
     - External Stakeholder
     - Roles: payment transaction.
+
+- Cloud service provider
+    - External Stakeholder
+    - Roles: providing server.
