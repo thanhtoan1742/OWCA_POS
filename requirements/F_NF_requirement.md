@@ -1,6 +1,23 @@
 # Functional and Non-functional Requirement
 
 ## Functional Requirement
+- Search engine: customers can find foods/drinks based on their names, ratings, recently,... 
+- Order food: customers can order food (add new, remove, change food quantity,...)
+- Reservation: customers can book table with/ without food before a amount of time
+- Payment function: customers can choose the payment method for their order.
+- Feedback: customers can write reviews, rate dishes or services.
+- Confirm order: check if dishes in order are available.
+    - Clerks can confirm orders via restaurant staff's manually announcement.
+    - Extend (toggleable): Ingredient management system can link to app to be automatically functional.
+- Profile management: users can manage their profile (authorization, personal information,)
+- Data management: restaurant manager can edit menu, including promotions, customers and staff information, homepage, feedbacks,...
+_____________________________________
+| aaaaaaa   |            |          |
+|  aaaaaa   |  bbbbbbbb  | ddddddd  |
+|    aaaa   |     bbb    |  ddddd   |____
+|___________|____________|__________|[  ]
+
+## Features
 - Webpage:
     - Provide QR code which links to landing page.
     - Have separate section/page for restaurant staff (need authentication).
@@ -42,7 +59,9 @@
     - Update food availability.
     - View invoice, transaction history.
     - Edit the menu.
-    
+
+
+
 
 
 ## Non-functional Requirement
