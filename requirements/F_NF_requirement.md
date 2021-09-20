@@ -1,21 +1,22 @@
 # Functional and Non-functional Requirement
 
 ## Functional Requirement
-- Search engine: customers can find foods/drinks based on their names, ratings, recently,... 
-- Order food: customers can order food (add new, remove, change food quantity,...)
-- Reservation: customers can book table with/ without food before a amount of time
-- Payment function: customers can choose the payment method for their order.
+- Search engine: customers can view menu foods/drinks based on their names, ratings, recently,... 
+- Order food: customers can order food (add new, remove, change food quantity,...).
+- Reservation (Book table): customers can book table with/ without food before an amount of time.
+- Payment function (Purchase): customers can choose the payment method for their order.
 - Feedback: customers can write reviews, rate dishes or services.
 - Confirm order: check if dishes in order are available.
     - Clerks can confirm orders via restaurant staff's manually announcement.
     - Extend (toggleable): Ingredient management system can link to app to be automatically functional.
-- Profile management: users can manage their profile (authorization, personal information,)
+- Profile management: users can manage their profile (authorization - , personal information,...).
 - Data management: restaurant manager can edit menu, including promotions, customers and staff information, homepage, feedbacks,...
 _____________________________________
 | aaaaaaa   |            |          |
 |  aaaaaa   |  bbbbbbbb  | ddddddd  |
 |    aaaa   |     bbb    |  ddddd   |____
 |___________|____________|__________|[  ]
+
 
 ## Features
 - Webpage:
@@ -41,13 +42,13 @@ _____________________________________
     |                                                        |
     |________________________________________________________|
 
-- General users can:
+- Users can:
     - View the menu.
     - Search for food using inputbox or filter.
 
 - Custormers can:
+    - Order food: add food to cart.
     - Ask for printing invoice / Receive invoice.
-    - Add food to cart.
     - Pay the bill via banking services.
     - Rate and send feedback.
     

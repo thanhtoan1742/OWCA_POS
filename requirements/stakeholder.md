@@ -2,11 +2,9 @@
 
 ## Definition
 
-Stakeholder is a person, group or company that is directly or indirectly
-involved in the project and who may affect or get affected by the outcome of
-the project
-
-
+Stakeholders are people, groups or companies who are directly or indirectly
+involved in the project and may affect or be affected by the outcome of
+the project.
 
 ## Types
 
