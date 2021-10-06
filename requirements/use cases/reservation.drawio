@@ -1,19 +1,22 @@
 <mxfile host="65bd71144e">
     <diagram id="rKi3KByvyJRsUTmwY2QA" name="Page-1">
-        <mxGraphModel dx="593" dy="1578" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#F1FAEE" math="0" shadow="0">
+        <mxGraphModel dx="600" dy="1567" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#F1FAEE" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;endArrow=open;endFill=0;endSize=10;dashed=1;entryX=0.5;entryY=0;entryDx=0;entryDy=0;exitX=0;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=#F1FAEE;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" source="5" target="11" edge="1">
-                    <mxGeometry x="-0.0325" y="-4" relative="1" as="geometry">
+                <mxCell id="32" value="Reservation" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;sketch=0;width=127;height=30;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+                    <mxGeometry x="200" y="-900" width="527" height="420" as="geometry"/>
+                </mxCell>
+                <mxCell id="4" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;endArrow=open;endFill=0;endSize=10;dashed=1;labelBackgroundColor=#F1FAEE;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" source="5" target="11" edge="1">
+                    <mxGeometry x="-0.0965" y="-2" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                         <mxPoint x="435" y="-710" as="targetPoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="5" value="Preorder food" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
-                    <mxGeometry x="470" y="-860" width="120" height="80" as="geometry"/>
+                    <mxGeometry x="480" y="-860" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" style="edgeStyle=entityRelationEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;endSize=10;entryX=0;entryY=0.5;entryDx=0;entryDy=0;endArrow=open;endFill=0;labelBackgroundColor=#F1FAEE;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" source="8" target="11" edge="1">
+                <mxCell id="7" style="edgeStyle=entityRelationEdgeStyle;rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;endSize=10;endArrow=classic;endFill=1;labelBackgroundColor=#F1FAEE;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" source="8" target="11" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint x="315" y="-660" as="targetPoint"/>
                     </mxGeometry>
@@ -24,17 +27,17 @@
                 <mxCell id="11" value="Book table" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
                     <mxGeometry x="270" y="-730" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;endArrow=open;endFill=0;endSize=10;dashed=1;exitX=0.5;exitY=1;exitDx=0;exitDy=0;labelBackgroundColor=#F1FAEE;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" source="11" target="16" edge="1">
-                    <mxGeometry x="0.0409" y="-2" relative="1" as="geometry">
+                <mxCell id="15" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;endArrow=open;endFill=0;endSize=10;dashed=1;labelBackgroundColor=#F1FAEE;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" source="11" target="16" edge="1">
+                    <mxGeometry x="0.0849" y="1" relative="1" as="geometry">
                         <mxPoint as="offset"/>
                         <mxPoint x="315" y="-440" as="targetPoint"/>
                         <mxPoint x="310" y="-570" as="sourcePoint"/>
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="16" value="Deposit money" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
-                    <mxGeometry x="470" y="-570" width="120" height="80" as="geometry"/>
+                    <mxGeometry x="480" y="-600" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="24" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;endArrow=open;endFill=0;endSize=10;dashed=1;entryX=0;entryY=0.5;entryDx=0;entryDy=0;exitX=1;exitY=0.5;exitDx=0;exitDy=0;labelBackgroundColor=#F1FAEE;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" source="11" target="25" edge="1">
+                <mxCell id="24" value="&amp;lt;&amp;lt;include&amp;gt;&amp;gt;" style="rounded=1;sketch=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;endArrow=open;endFill=0;endSize=10;dashed=1;labelBackgroundColor=#F1FAEE;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" source="11" target="25" edge="1">
                     <mxGeometry relative="1" as="geometry">
                         <mxPoint as="offset"/>
                         <mxPoint x="445" y="-560" as="targetPoint"/>
@@ -42,10 +45,7 @@
                     </mxGeometry>
                 </mxCell>
                 <mxCell id="25" value="Update status" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
-                    <mxGeometry x="490" y="-730" width="120" height="80" as="geometry"/>
-                </mxCell>
-                <mxCell id="32" value="Reservation" style="shape=umlFrame;whiteSpace=wrap;html=1;rounded=0;sketch=0;width=127;height=30;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
-                    <mxGeometry x="200" y="-930" width="527" height="480" as="geometry"/>
+                    <mxGeometry x="530" y="-730" width="120" height="80" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
