@@ -11,11 +11,14 @@
     - Extend (toggleable): Ingredient management system can link to app to be automatically functional.
 - Profile management: users can manage their profile (authorization - , personal information,...).
 - Data management: restaurant manager can edit menu, including promotions, customers and staff information, homepage, feedbacks,...
+
+```
 _____________________________________
 | aaaaaaa   |            |          |
 |  aaaaaa   |  bbbbbbbb  | ddddddd  |
 |    aaaa   |     bbb    |  ddddd   |____
 |___________|____________|__________|[  ]
+```
 
 
 ## Features
@@ -25,6 +28,8 @@ _____________________________________
     - Login page for customers/staff.
     - Redirect customer to customer page.
     - Redirect staff to staff page.
+
+```
     __________________________________________________________
     |                           |                            |
     |  >>>>>  Customer  <<<<<   |           Staff            |
@@ -41,6 +46,7 @@ _____________________________________
     |                                                        |
     |                                                        |
     |________________________________________________________|
+```
 
 - Users can:
     - View the menu.
