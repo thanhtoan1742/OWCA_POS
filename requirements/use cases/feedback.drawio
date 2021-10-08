@@ -1,37 +1,37 @@
 <mxfile host="65bd71144e">
     <diagram id="bSG6LJW36YyYRicTBclz" name="Page-1">
-        <mxGraphModel dx="600" dy="467" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" background="#F1FAEE" math="0" shadow="0">
+        <mxGraphModel dx="1088" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="16" value="Feedback" style="shape=umlFrame;whiteSpace=wrap;html=1;fontSize=14;fillColor=none;width=100;height=30;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+                <mxCell id="16" value="Feedback" style="shape=umlFrame;whiteSpace=wrap;html=1;fontSize=14;fillColor=none;width=100;height=30;" parent="1" vertex="1">
                     <mxGeometry x="220" y="80" width="530" height="300" as="geometry"/>
                 </mxCell>
-                <mxCell id="5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;strokeColor=#457B9D;fontColor=#1D3557;endSize=10;labelBackgroundColor=#F1FAEE;" parent="1" source="2" target="4" edge="1">
+                <mxCell id="5" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=classic;endFill=1;fontSize=14;endSize=10;" parent="1" source="2" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;endArrow=classic;endFill=1;strokeColor=#457B9D;fontColor=#1D3557;endSize=10;labelBackgroundColor=#F1FAEE;" parent="1" source="2" target="14" edge="1">
+                <mxCell id="15" style="edgeStyle=none;rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;endArrow=classic;endFill=1;endSize=10;" parent="1" source="2" target="14" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="2" value="Customer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=14;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+                <mxCell id="2" value="Customer" style="shape=umlActor;verticalLabelPosition=bottom;verticalAlign=top;html=1;outlineConnect=0;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="120" y="190" width="30" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="4" value="Rate food" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+                <mxCell id="4" value="Rate food" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="305" y="130" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="7" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;fontSize=14;strokeColor=#457B9D;fontColor=#1D3557;endSize=10;startSize=10;labelBackgroundColor=#F1FAEE;" parent="1" source="6" target="4" edge="1">
+                <mxCell id="7" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;endArrow=open;endFill=0;fontSize=14;endSize=10;startSize=10;" parent="1" source="6" target="4" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="6" value="Write review" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+                <mxCell id="6" value="Write review" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="600" y="130" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="17" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;strokeColor=#457B9D;fontColor=#1D3557;labelBackgroundColor=#F1FAEE;fontSize=14;" parent="1" source="10" target="14" edge="1">
+                <mxCell id="17" value="&amp;lt;&amp;lt;extend&amp;gt;&amp;gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;endArrow=open;endFill=0;dashed=1;fontSize=14;" parent="1" source="10" target="14" edge="1">
                     <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
-                <mxCell id="10" value="Like review" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+                <mxCell id="10" value="Like review" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="600" y="260" width="120" height="80" as="geometry"/>
                 </mxCell>
-                <mxCell id="14" value="View review" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;fillColor=#A8DADC;strokeColor=#457B9D;fontColor=#1D3557;" parent="1" vertex="1">
+                <mxCell id="14" value="View review" style="ellipse;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="305" y="260" width="120" height="80" as="geometry"/>
                 </mxCell>
             </root>

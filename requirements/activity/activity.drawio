@@ -1,16 +1,16 @@
 <mxfile host="65bd71144e">
     <diagram id="HM_hNTSowewXskOLV_WR" name="Page-1">
-        <mxGraphModel dx="1000" dy="778" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+        <mxGraphModel dx="1284" dy="538" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
             <root>
                 <mxCell id="0"/>
                 <mxCell id="1" parent="0"/>
-                <mxCell id="80" value="Clerk" style="swimlane;startSize=30;fontSize=14;" vertex="1" parent="1">
+                <mxCell id="80" value="Clerk" style="swimlane;startSize=30;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="680" width="170" height="1050" as="geometry"/>
                 </mxCell>
                 <mxCell id="26" value="Confirm order" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="80" vertex="1">
                     <mxGeometry x="30" y="660" width="120" height="60" as="geometry"/>
                 </mxCell>
-                <mxCell id="78" value="Customer" style="swimlane;startSize=30;fontSize=14;" vertex="1" parent="1">
+                <mxCell id="78" value="Customer" style="swimlane;startSize=30;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="160" width="520" height="1050" as="geometry"/>
                 </mxCell>
                 <mxCell id="23" value="Order food" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="78" vertex="1">
@@ -164,27 +164,6 @@
                 </mxCell>
                 <mxCell id="47" value="View cart" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" parent="1" vertex="1">
                     <mxGeometry x="215" y="440" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="81" value="Manager" style="swimlane;startSize=30;fontSize=14;" vertex="1" parent="1">
-                    <mxGeometry width="160" height="1050" as="geometry"/>
-                </mxCell>
-                <mxCell id="87" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;fontSize=14;" edge="1" parent="81" source="82" target="86">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="82" value="Manage menu" style="rounded=1;whiteSpace=wrap;html=1;fontSize=14;" vertex="1" parent="81">
-                    <mxGeometry x="20" y="120" width="120" height="60" as="geometry"/>
-                </mxCell>
-                <mxCell id="84" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;fontSize=14;" edge="1" parent="81" source="83" target="82">
-                    <mxGeometry relative="1" as="geometry"/>
-                </mxCell>
-                <mxCell id="83" value="" style="ellipse;fillColor=#000000;strokeColor=none;fontSize=14;" vertex="1" parent="81">
-                    <mxGeometry x="65" y="50" width="30" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="86" value="" style="shape=sumEllipse;perimeter=ellipsePerimeter;whiteSpace=wrap;html=1;backgroundOutline=1;fontSize=14;" vertex="1" parent="81">
-                    <mxGeometry x="65" y="250" width="30" height="30" as="geometry"/>
-                </mxCell>
-                <mxCell id="85" style="edgeStyle=elbowEdgeStyle;rounded=0;orthogonalLoop=1;jettySize=auto;elbow=vertical;html=1;fontSize=14;" edge="1" parent="1" source="82" target="3">
-                    <mxGeometry relative="1" as="geometry"/>
                 </mxCell>
             </root>
         </mxGraphModel>
