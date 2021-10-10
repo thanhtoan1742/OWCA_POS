@@ -1,0 +1,59 @@
+<mxfile host="65bd71144e">
+    <diagram id="Nu_ITPsejK-iuuJfmqxw" name="Page-1">
+        <mxGraphModel dx="1088" dy="512" grid="1" gridSize="10" guides="1" tooltips="1" connect="1" arrows="1" fold="1" page="1" pageScale="1" pageWidth="850" pageHeight="1100" math="0" shadow="0">
+            <root>
+                <mxCell id="0"/>
+                <mxCell id="1" parent="0"/>
+                <mxCell id="2" value="authenticatedInfo" style="html=1;verticalAlign=bottom;endArrow=open;dashed=1;endSize=10;fontSize=14;fontFamily=Lucida Console;" edge="1" parent="1">
+                    <mxGeometry x="-0.0085" y="-10" relative="1" as="geometry">
+                        <mxPoint x="30" y="225" as="sourcePoint"/>
+                        <mxPoint x="322.5" y="225" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="255" y="225"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="3" value="&lt;font face=&quot;Lucida Console&quot;&gt;[Unauthenticated]&lt;br&gt;getAuthenticationInfo()&lt;/font&gt;" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;fontSize=14;endArrow=block;endFill=1;endSize=10;" edge="1" parent="1">
+                    <mxGeometry x="-0.0291" relative="1" as="geometry">
+                        <mxPoint x="30" y="190" as="targetPoint"/>
+                        <mxPoint x="322.5" y="190" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="265" y="190"/>
+                        </Array>
+                        <mxPoint as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="4" value="[Authenticated] message(OK)" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=14;endArrow=open;endFill=0;fontFamily=Lucida Console;endSize=10;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="332.5" y="300" as="targetPoint"/>
+                        <mxPoint x="1180" y="270" as="sourcePoint"/>
+                        <Array as="points">
+                            <mxPoint x="1095" y="270"/>
+                            <mxPoint x="1015" y="300"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="5" value="[Unauthenticated] message(Failed)" style="rounded=0;orthogonalLoop=1;jettySize=auto;html=1;dashed=1;fontSize=14;endArrow=open;endFill=0;fontFamily=Lucida Console;endSize=10;" edge="1" parent="1">
+                    <mxGeometry relative="1" as="geometry">
+                        <mxPoint x="1180" y="270" as="sourcePoint"/>
+                        <mxPoint x="332.5" y="270" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="1005" y="270"/>
+                        </Array>
+                    </mxGeometry>
+                </mxCell>
+                <mxCell id="6" value="authenticate(authenticationInfo)" style="html=1;verticalAlign=bottom;endArrow=block;rounded=0;fontSize=14;fontFamily=Lucida Console;endSize=10;" edge="1" parent="1">
+                    <mxGeometry x="0.0893" y="-10" width="80" relative="1" as="geometry">
+                        <mxPoint x="332.5" y="240" as="sourcePoint"/>
+                        <mxPoint x="1180" y="240" as="targetPoint"/>
+                        <Array as="points">
+                            <mxPoint x="575" y="240"/>
+                        </Array>
+                        <mxPoint x="1" as="offset"/>
+                    </mxGeometry>
+                </mxCell>
+            </root>
+        </mxGraphModel>
+    </diagram>
+</mxfile>
