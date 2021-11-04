@@ -1,9 +1,15 @@
 import React from 'react';
+import Button from './Button'
+
 
 class CategoryBar extends React.Component {
     render() {
         return (
-            <div>this is cat bar</div>
+            <div>
+                <Button>Snack</Button>
+                <Button>FastFood</Button>
+                <Button>Drink</Button>
+            </div>
         );
     }
 }
