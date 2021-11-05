@@ -1,4 +1,6 @@
 import React from 'react';
+import Popup from 'reactjs-popup';
+import FoodView from './FoodView'
 
 class FoodItem extends React.Component {
     render() {
@@ -11,28 +13,38 @@ class FoodItem extends React.Component {
         };
 
         const imageStyle = {
-            width: "100%",
-            height: "68%",
+            flex: 7,
         };
 
         const nameStyle = {
-            width: "100%",
-            height: "21%",
+            flex: 2,
             fontSize: "15pt"
         }
 
         const priceStyle = {
-            width: "100%",
-            height: "11%",
+            flex: 1,
             fontSize: "15pt"
         }
 
-        return (
+        const element =
             <div style={containerStyle}>
-                <img src={this.props.image} style={imageStyle}/>
+                <img style={imageStyle} src={this.props.image} alt=""/>
                 <div style={nameStyle}>{this.props.name}</div>
                 <div style={priceStyle}>{this.props.price}</div>
-            </div>
+            </div>;
+
+        const description = "fried chicken is a good food to relieve your stress."
+
+
+        return (
+            <Popup trigger={element} position="center center">
+                <FoodView
+                    image={this.props.image}
+                    name={this.props.name}
+                    description={description}
+                    price={this.props.price}
+                />
+            </Popup>
         );
     }
 }

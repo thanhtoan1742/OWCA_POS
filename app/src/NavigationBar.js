@@ -3,8 +3,13 @@ import Button from './Button'
 
 class NavigationBar extends React.Component {
     render() {
+        const style = {
+            display: "flex",
+            justifyContent: "space-around",
+        };
+
         return (
-            <div>
+            <div style={style}>
                 <Button>sidebar</Button>
                 <Button>logo</Button>
                 <Button>filter</Button>
