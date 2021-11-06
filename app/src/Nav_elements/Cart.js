@@ -1,6 +1,6 @@
 import React from 'react';
 import './Cart.css'
-
+import food from '../images/food.png';
 
 function CartItem(props) {
     function updateQuantity(amount) {
@@ -39,7 +39,7 @@ function Cart() {
                 <div class="box-container">
                     <div class="box">
                         <i class="fas fa-times"></i>
-                        <img src="" alt=""/>
+                        <img src= {food} alt=""/>
                         <div class="content">
                             <h3>food</h3>
                             <span> quantity : </span>
@@ -51,7 +51,7 @@ function Cart() {
                     </div>
                     <div class="box">
                         <i class="fas fa-times"></i>
-                        <img src="" alt=""/>
+                        <img src= {food} alt=""/>
                         <div class="content">
                             <h3>food</h3>
                             <span> quantity : </span>
@@ -63,7 +63,7 @@ function Cart() {
                     </div>
                     <div class="box">
                         <i class="fas fa-times"></i>
-                        <img src="" alt=""/>
+                        <img src= {food} alt=""/>
                         <div class="content">
                             <h3>food</h3>
                             <span> quantity : </span>
@@ -75,7 +75,7 @@ function Cart() {
                     </div>
                     <div class="box">
                         <i class="fas fa-times"></i>
-                        <img src="" alt=""/>
+                        <img src= {food} alt=""/>
                         <div class="content">
                             <h3>food</h3>
                             <span> quantity : </span>
@@ -87,7 +87,7 @@ function Cart() {
                     </div>
                     <div class="box">
                         <i class="fas fa-times"></i>
-                        <img src="" alt=""/>
+                        <img src= {food} alt=""/>
                         <div class="content">
                             <h3>food</h3>
                             <span> quantity : </span>
