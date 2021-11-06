@@ -51,8 +51,8 @@ function Header(props) {
         <header className = 'header'>
             <a href="#home" className="logo"> <img src = {logo}/> OWCA </a>
             <nav id = "nav-nav" className="navbar">
-                <a className = 'active' href="#home">Home</a>
-                <a href="#menu">Menu</a>
+                <a href="#home">Home</a>
+                <a className = 'active' href="#menu">Menu</a>
                 <a href="#reservation">Reservation</a>
                 <a href="#about">About</a>
                 <a href="#review">Review</a>

@@ -57,14 +57,7 @@ code {
 
 
 
-  /* #search-form #search-box{
-      width:90%;
-      margin:0 1rem;
-  }
-
-  .home .home-slider .slide .content h3{
-      font-size: 5rem;
-  } */
+  
 
 }
 /* extra-small device */
@@ -73,14 +66,6 @@ code {
   html{
       font-size: 50%;
   }
-
-  .dishes .box-container .box img{
-      height:auto;
-      width: 100%;
-  }
-
-  .order form .inputBox .input{
-      width:100%;
-  }
+  
   
 }

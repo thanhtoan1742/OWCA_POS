@@ -45,7 +45,7 @@
 .login-form-container form .remember label {
     font-size: 1.5rem;
     cursor: pointer;
-    color: rgb(130, 67, 231);
+    color: rgb(6, 0, 15);
 }
 .login-form-container form .btn{
     text-align: center;
@@ -55,12 +55,12 @@
 .login-form-container form p{
     font-size: 1.5rem;
     padding-top: 1rem;
-    color:rgb(5, 168, 5);
-}
-.login-form-container form p a{
     color: rgb(8, 2, 2);
 }
+.login-form-container form p a{
+    color:rgb(5, 168, 5);
+}
 .login-form-container form p a:hover{
-    color: rgb(250, 11, 11);
+    color: rgb(156, 4, 4);
     text-decoration: underline;
 }

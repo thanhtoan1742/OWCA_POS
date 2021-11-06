@@ -1,14 +1,12 @@
 import './App.css';
 import NavigationBar from './NavigationBar';
-import CategoryBar from './CategoryBar';
-import FoodGrid from './FoodGrid';
+import Menu from './Menu';
 
 function App() {
   return (
     <div className="App">
       <NavigationBar />
-      <CategoryBar />
-      <FoodGrid />
+      <Menu />
     </div>
   );
 }
