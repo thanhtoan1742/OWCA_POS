@@ -1,0 +1,138 @@
+.cart-container {
+    position: fixed;
+    top: 8.5rem;
+    left: 0;
+    right: 0;
+    z-index: 2;
+    height: 90vh;
+    background: #fff;
+    overflow-y: scroll;
+    padding-bottom: 8rem;
+    display: none;
+    color: #f1f1f1;
+}
+  
+.cart-container.active {
+  display: block;
+  
+}
+
+.cart-container::-webkit-scrollbar {
+  width: 1rem;
+}
+
+.cart-container::-webkit-scrollbar-track {
+  background: #fff;
+}
+
+.cart-container::-webkit-scrollbar-thumb {
+  background: #ebe96f;
+  border-radius: 5rem;
+}
+.cart-container::-webkit-scrollbar-thumb:hover {
+  background: var(--green);
+}
+
+.cart-container .title {
+  font-size: 2.7rem;
+  padding: 1rem;
+  color: #130f40;
+  border-bottom: var(--border);
+  text-align: center;
+}
+
+.cart-container .products-container{
+  border: var(--border);
+  border-radius: .5rem;
+  animation: fadeUp .4s linear;
+}
+
+.cart-container .products-container .box-container {
+  display: grid;
+  gap: 1.5rem;
+  padding: 1.5rem;
+  grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
+}
+
+.cart-container .products-container .box-container .box{
+  position: relative;
+  border-radius: .5rem;
+  background: #f7f7f7;
+  display: flex;
+  align-items: center;
+  gap: 1.5rem;
+  padding: 2rem;
+}
+.cart-container .products-container .box-container .box .fa-times{
+  position: absolute;
+  right : 1rem ;top: .7rem;
+  font-size: 2rem;
+  cursor: pointer;
+  color: #d9d8e7;
+}
+.cart-container .products-container .box-container .box .fa-times:hover {
+  color: black;
+}
+.cart-container .products-container .box-container .box .fa-times:active {
+  color: red;
+}
+.cart-container .products-container .box-container .box img {
+  height: 8rem;
+}
+
+.cart-container .products-container .box-container .box .content h3 {
+  font-size: 2rem;
+  color: #130f40;
+}
+.cart-container .products-container .box-container .box .content span{
+  font-size: 1.5rem;
+  color: rgb(48, 24, 24);
+}
+
+.cart-container .products-container .box-container .box .content input{
+  width: 7.2rem;
+  padding: .5rem 1.2rem;
+  font-size: 1.5rem;
+  color: black;
+  margin: .7rem 0;
+}
+.cart-container .products-container .box-container .box .content .price{
+  color: var(--green);
+}
+.cart-container .cart-total {
+  margin-top: 2rem;
+  border: var(--border);
+  border-radius: .5rem;
+  animation: fadeUp .4s linear .4s backwards;
+}
+
+.cart-container .cart-total .box {
+  padding: 1.5rem;
+}
+
+.cart-container .cart-total .box h3 {
+  color: #130f40;
+  font-size: 2rem;
+  padding-bottom: .7rem;
+}
+
+.cart-container .cart-total .box h3 span {
+  color: var(--green);
+}
+
+.btn {
+  display: inline-block;
+  margin-top: 1rem;
+  padding: .7rem 1.8rem;
+  font-size: 1.7rem;
+  cursor: pointer;
+  color: #fff;
+  background: var(--yellow);
+  border-radius: .7rem;
+}
+
+.btn:hover {
+  background: var(--green);
+}
+
+  
