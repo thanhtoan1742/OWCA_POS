@@ -4,7 +4,7 @@ function FoodItem() {
     return (
         <div className="box">
             <div className="image">
-                <img src= {foodImagePath + "food-2.png"} />
+                <img src= {foodImagePath + "food-3.png"} />
             </div>
             <div className="content">
                 <h3>food</h3>

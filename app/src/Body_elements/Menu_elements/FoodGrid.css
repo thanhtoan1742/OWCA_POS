@@ -1,8 +1,14 @@
+.food-grid{
+    position: relative;
+}
 .product{
-    clip-path: polygon(0 0, 100% 0, 50% 0, 50% 0);
+    position: absolute;
+    top:0;left:0;right: 0;
+    display: none;
+    animation: fadeUp .4s linear;
 }
 .product.active{
-    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+    display:block;
 }
 .product .title{
     font-size: 2.2rem;

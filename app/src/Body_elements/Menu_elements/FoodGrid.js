@@ -5,7 +5,7 @@ import Pizza from './FoodGrid_elements/Pizza';
 
 function FoodGrid(){ 
     return (
-        <div>
+        <div class = "food-grid">
             <Combo/>
             <Pizza/>
         </div>
