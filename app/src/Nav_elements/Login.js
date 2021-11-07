@@ -7,8 +7,8 @@ function Login() {
         <div class="login-form-container" id="login">
             <form action="">
                 <h3>login form</h3>
-                <input type="email" placeholder="enter your email" className="box"/>
-                <input type="password" placeholder="enter your password" className="box" />
+                <input type="email" placeholder="Enter your email" className="box"/>
+                <input type="password" placeholder="Enter your password" className="box" />
                 <div className="remember">
                     <input type="checkbox" name="" id="remember-me"/>
                     <label for="remember-me">remember me</label>

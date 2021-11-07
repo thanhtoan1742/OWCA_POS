@@ -3,10 +3,17 @@ import ReactDOM from 'react-dom';
 import './index.css';
 import App from './App';
 import reportWebVitals from './reportWebVitals';
+import { SearchParamProvider } from './stores/SearchParam';
+import { CartContextProvider } from './stores/cart-context';
 
-ReactDOM.render(
+ReactDOM.render
+(
   <React.StrictMode>
+  <CartContextProvider>
+  <SearchParamProvider>
     <App />
+  </SearchParamProvider>
+  </CartContextProvider>
   </React.StrictMode>,
   document.getElementById('root')
 );

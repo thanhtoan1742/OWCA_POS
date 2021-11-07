@@ -17,9 +17,7 @@
     margin: 1rem;
     border-bottom: var(--border);
 }
-.category .box-container .box.active{
-    background: var(--yellow);
-}
+
 .category .box-container .box{
     padding: 2rem;
     text-align: center;

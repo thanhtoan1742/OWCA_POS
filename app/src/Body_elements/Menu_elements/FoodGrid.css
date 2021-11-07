@@ -4,12 +4,12 @@
 .product{
     position: absolute;
     top:0;left:0;right: 0;
-    display: none;
+    display: block;
     animation: fadeUp .4s linear;
 }
-.product.active{
+/* .product.active{
     display:block;
-}
+} */
 .product .title{
     font-size: 2.2rem;
     text-align: center;

@@ -1,13 +1,21 @@
 import React from 'react';
 import './FoodGrid.css';
-import Combo from './FoodGrid_elements/Combo';
-import Pizza from './FoodGrid_elements/Pizza';
+import FoodItem from './FoodItem';
 
-function FoodGrid(){ 
+function FoodGrid(props){ 
     return (
         <div class = "food-grid">
-            <Combo/>
-            <Pizza/>
+            <section id="pizza" class = "product">
+            <h1 className="title">our <span>products</span></h1>
+            <div className="food-container">
+            
+            {props.foodlist.map((item, index)=>{
+                return(
+                    <FoodItem data={item} key={index}/>
+                )
+            })}
+            </div>
+            </section>
         </div>
     );
 }

@@ -146,7 +146,7 @@ header .icons div.active
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
   
-    header .navbar span{
+    header .navbar a{
       display: block;
       padding:1.5rem;
       margin:1rem;

@@ -1,18 +1,24 @@
-import React, { useState, useRef } from 'react';
+import React, { useState, useRef, useContext } from 'react';
 import './Header.css';
 import logo from '../images/logo.png';
+
+import CartContext from '../stores/cart-context';
+
+
 function Header(props) {
     const [ navbarIsOpen, setNavbarIsOpen ] = useState(false);
-    const login_btn = document.getElementById('login-btn');
-    const login_form = document.getElementById('login');
-    const cart_btn = document.getElementById('cart-btn');
-    const cart = document.getElementById('cart');
-    const navbar = document.querySelector('.navbar');
-    const form_search = document.getElementById('search-form');
-    const search_btn = document.getElementById('search-btn');
-    const menu_btn = document.getElementById('menu-btn');
-    const menu = document.getElementById('menu');
-    const menu_container = document.getElementById('menu-container');
+    const CrtCtx = useContext(CartContext);
+
+    // const login_btn = document.getElementById('login-btn');
+    // const login_form = document.getElementById('login');
+    // const cart_btn = document.getElementById('cart-btn');
+    // const cart = document.getElementById('cart');
+    // const navbar = document.querySelector('.navbar');
+    // const form_search = document.getElementById('search-form');
+    // const search_btn = document.getElementById('search-btn');
+    // const menu_btn = document.getElementById('menu-btn');
+    // const menu = document.getElementById('menu');
+    // const menu_container = document.getElementById('menu-container');
 
     function Menu_handle() {
         let navbar = document.querySelector('.navbar');
@@ -23,7 +29,6 @@ function Header(props) {
         form_search.classList.remove('active');
         search_btn.classList.remove('active');
         menu_btn.classList.toggle('active');
-
     }
     function Search_handle(){
         let form_search = document.getElementById('search-form');
