@@ -86,12 +86,12 @@ function Header(props) {
         <header className = 'header'>
             <a href="#home" className="logo"> <img src = {logo}/> OWCA </a>
             <nav id = "nav-nav" className="navbar">
-                <span>Home</span>
-                <span onClick = {Body_handle} id = 'menu'>Menu</span>
-                <span>Reservation</span>
-                <span>About</span>
-                <span>Review</span>
-                <span>Order</span>
+                <a href = "#">Home</a>
+                <a href = "#category" onClick = {Body_handle} id = 'menu'>Menu</a>
+                <a href = "#">Reservation</a>
+                <a href = "#">About</a>
+                <a href = "#">Review</a>
+                <a href = "#">Order</a>
             </nav>
             <div className="icons">
                 <div id="menu-btn" onClick = {Menu_handle} className="fas fa-bars"></div>

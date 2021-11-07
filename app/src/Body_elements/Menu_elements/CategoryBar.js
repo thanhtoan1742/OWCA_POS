@@ -35,7 +35,7 @@ function CategoryBar(props) {
     }
 
     return (
-        <section class="category">
+        <section class="category" id = "category">
             <h1 class="title"> our <span>category</span></h1>
             <div class="box-container">
                 <CategoryItem id = "combo-btn" onClick = {Combo_handle} href="#" src="cat-1.png">
