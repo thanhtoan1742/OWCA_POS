@@ -1,0 +1,9 @@
+#menu-container{
+    height: calc(100vh - 8.5rem);
+    overflow-y: scroll;
+    display: none;
+}
+#menu-container.active{
+    display: block;
+    animation: fadeInRight .4s linear;
+}

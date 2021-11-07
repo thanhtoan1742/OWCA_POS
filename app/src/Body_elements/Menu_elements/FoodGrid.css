@@ -1,0 +1,59 @@
+.product{
+    clip-path: polygon(0 0, 100% 0, 50% 0, 50% 0);
+}
+.product.active{
+    clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
+}
+.product .title{
+    font-size: 2.2rem;
+    text-align: center;
+    border-bottom: var(--border);
+    padding: .7rem 1rem;
+    margin: 1rem; 
+
+}
+.product .title span{
+    font-size: 2.5rem;
+    color: var(--yellow);
+}
+
+.product .food-container{
+    display: grid;
+    grid-template-columns: repeat(auto-fit, minmax(25rem,1fr));
+    gap: 1.5rem;
+    padding: 0 1rem 1rem;
+}
+.product .food-container .box{
+    background: #f7f7f7;
+    text-align: center;
+    position: relative;
+    border-radius: .5rem;
+    padding: 2rem;
+}
+.product .food-container .box .image{
+    margin: 1rem 0;
+}
+.product .food-container .box .image img{
+    height: 15rem;
+}
+.product .food-container .box .content h3{
+    font-size: 2rem;
+    color:#130f40;
+}
+.product .food-container .box .content .stars{
+    color: gold;
+    font-size: 1.6rem;
+    padding: 1rem 0;
+}
+.product .food-container .box .content .stars span{
+    color: #666;
+}
+.product .food-container .box .content .price{
+    font-size: 2rem;
+    color: #130f40;
+}
+.product .food-container .box .content .price span{
+    text-decoration: line-through;
+    font-size: 1.5rem;
+    color: #666;
+}

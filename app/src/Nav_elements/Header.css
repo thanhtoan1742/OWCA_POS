@@ -22,7 +22,7 @@ header .logo{
 header .logo img{
     width: 6rem;
 }
-header .navbar a{
+header .navbar span{
     font-size: 1.7rem;
     border-radius: .5rem;
     padding:.5rem 1.5rem;
@@ -30,11 +30,13 @@ header .navbar a{
     margin-right: 2px;
 }
 
-header .navbar a.active,
-header .navbar a:hover{
+header .navbar span.active,
+header .navbar span:hover{
     color:#fff;
     background: var(--yellow);
+    cursor: pointer;
 }
+
 
 header .icons div{
     cursor: pointer;
@@ -144,7 +146,7 @@ header .icons div.active
         clip-path: polygon(0 0, 100% 0, 100% 100%, 0 100%);
     }
   
-    header .navbar a{
+    header .navbar span{
       display: block;
       padding:1.5rem;
       margin:1rem;

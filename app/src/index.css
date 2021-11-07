@@ -43,7 +43,18 @@ code {
       opacity: 0;
   }
 } 
-
+@keyframes fadeInRight {
+  0% {
+     opacity: 0;
+     transform: translateX(20px);
+  }
+}
+@keyframes fadeInLeft {
+  0% {
+     opacity: 0;
+     transform: translateX(-20px);
+  }
+}
 /* media queries  */
 @media (max-width:991px){/* medium device */
   html{

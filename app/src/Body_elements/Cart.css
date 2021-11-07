@@ -4,9 +4,9 @@
     left: 0;
     right: 0;
     z-index: 2;
-    height: 90vh;
-    background: #fff;
     overflow-y: scroll;
+    height: calc(100vh - 8.5rem);
+    background: #fff;
     padding:0 3rem 8rem;
     display: none;
     color: #f1f1f1;
@@ -16,22 +16,6 @@
 .cart-container.active {
   display: block;
   
-}
-
-.cart-container::-webkit-scrollbar {
-  width: 1rem;
-}
-
-.cart-container::-webkit-scrollbar-track {
-  background: #fff;
-}
-
-.cart-container::-webkit-scrollbar-thumb {
-  background: #ebe96f;
-  border-radius: 5rem;
-}
-.cart-container::-webkit-scrollbar-thumb:hover {
-  background: var(--green);
 }
 
 .cart-container .title {
