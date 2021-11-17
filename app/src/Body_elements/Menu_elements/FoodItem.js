@@ -2,6 +2,7 @@ import React, { useContext } from 'react';
 import CartContext from '../../stores/cart-context';
 
 export default function FoodItem(props) {
+    const n=25000;
     const CrtCtx= useContext(CartContext);
     return (
         <div className="box">
@@ -13,12 +14,12 @@ export default function FoodItem(props) {
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
+                    <i class="faheckout -b Minh_UIs fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                     <span> (50) </span>
                 </div>
-                <div className="price">{props.data.price} <span>25(VNĐ)</span></div>
+                <div className="price">{props.data.price.toLocaleString()} <span>{n.toLocaleString()}(VNĐ)</span></div>
                 <div className="btn" onClick={()=>{
                     let newFood={
                         ...props.data,

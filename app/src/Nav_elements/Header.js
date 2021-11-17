@@ -3,10 +3,12 @@ import './Header.css';
 import logo from '../images/logo.png';
 
 import CartContext from '../stores/cart-context';
+import SearchParam from '../stores/SearchParam';
 
 
 function Header(props) {
     const [ navbarIsOpen, setNavbarIsOpen ] = useState(false);
+    const searchParamCtx = useContext(SearchParam);
     const CrtCtx = useContext(CartContext);
 
     // const login_btn = document.getElementById('login-btn');
@@ -19,6 +21,15 @@ function Header(props) {
     // const menu_btn = document.getElementById('menu-btn');
     // const menu = document.getElementById('menu');
     // const menu_container = document.getElementById('menu-container');
+    const searchInput = useRef();
+
+    function searchHandler(event){
+        event.preventDefault();
+        event.stopPropagation();
+
+        searchParamCtx.clearFilter();
+        searchParamCtx.setName(searchInput.current.value)
+    }
 
     function Menu_handle() {
         let navbar = document.querySelector('.navbar');
@@ -101,12 +112,15 @@ function Header(props) {
             <div className="icons">
                 <div id="menu-btn" onClick = {Menu_handle} className="fas fa-bars"></div>
                 <div id="search-btn" onClick = {Search_handle} className="fas fa-search"></div>
-                <div id="cart-btn" onClick = {Cart_handle} className="fas fa-shopping-cart"></div>
+                <div id="cart-btn" onClick = {Cart_handle} className="fas fa-shopping-cart">
+                </div>
+                <span className='badge badge-warning' id='lblCartCount'>{CrtCtx.totalItem}</span>
+                
                 <div id="login-btn" onClick = {Login_handle} className="fas fa-user"></div>
             </div>
-            <form action="" id="search-form">
-                <input type="search" placeholder="Search..." id="search-box"/>
-                <label for="search-box" className="fas fa-search"></label>
+            <form action="" id="search-form" onSubmit={searchHandler}>
+                <input type="search" placeholder="Search..." id="search-box" ref={searchInput}/>
+                <button><label for="search-box" className="fas fa-search"></label></button>
             </form>
         </header>
     );

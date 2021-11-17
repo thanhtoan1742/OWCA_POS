@@ -38,7 +38,7 @@ function CartItem(props) {
                 <input type="number" value={props.data.quantity} min="1" onChange={onHandleChange}/>
                 <br/>
                 <span> price : </span>
-                <span class="price"> {props.data.price + " (VNĐ)"} </span>
+                <span class="price"> {props.data.price.toLocaleString() + " (VNĐ)"} </span>
             </div>
         </div>
     );
@@ -68,8 +68,8 @@ function Cart() {
             <div class="cart-total">
                 <h3 class="title"> cart total </h3>
                 <div class="box">
-                    <h3 class="subtotal"> subtotal : <span>{CrtCtx.totalPrice} (VNĐ)</span> </h3>
-                    <h3 class="total"> total : <span>{CrtCtx.totalPrice} (VNĐ)</span> </h3>
+                    <h3 class="subtotal"> subtotal : <span>{CrtCtx.totalPrice.toLocaleString()} (VNĐ)</span> </h3>
+                    <h3 class="total"> total : <span>{CrtCtx.totalPrice.toLocaleString()} (VNĐ)</span> </h3>
                     <a href="#" class="btn">proceed to checkout</a>
                 </div>
             </div>
