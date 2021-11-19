@@ -1,4 +1,4 @@
-import React, { useState, useRef, useContext } from 'react';
+import React, { useRef, useContext } from 'react';
 import './Header.css';
 import CartContext from '../stores/cart-context';
 import SearchParam from '../stores/SearchParam';
@@ -6,13 +6,6 @@ import SearchParam from '../stores/SearchParam';
 const logo = '/images/logo.png';
 
 function Header(props) {
-    /*
-    const [ menuIsOpen, setMenuIsOpen ] = useState(false);
-    const [ loginIsOpen, setLoginIsOpen ] = useState(false);
-    const [ cartIsOpen, setCartIsOpen ] = useState(false);
-
-
-    /**/
     const searchParamCtx = useContext(SearchParam);
     const CrtCtx = useContext(CartContext);
 
@@ -37,10 +30,6 @@ function Header(props) {
         menuContainer = document.getElementById('menu-container');
     }
 
-    /*
-    function switchState
-    */
-
     function searchHandler(event){
         event.preventDefault();
         event.stopPropagation();
@@ -50,9 +39,6 @@ function Header(props) {
     }
 
     function Nav_handle() {
-        /*
-        
-        */
         reloadDOMSelector();
         navbar.classList.toggle('active');
         navButton.classList.toggle('active');
@@ -60,28 +46,20 @@ function Header(props) {
         searchButton.classList.remove('active');
     }
     function Search_handle(){
-        /*
-        if (menuIsOpen) {
-            // Code
-        }
-        /**/
         reloadDOMSelector();
-        searchForm.classList.toggle('active');
-        searchButton.classList.toggle('active');
+        if (menu.classList.contains("active")) {
+            searchForm.classList.toggle('active');
+            searchButton.classList.toggle('active');
+        }
     }
     function Cart_handle() {
-        /*
-        let menuIsOpen_old = menuIsOpen;
-        let 
-        setCartIsOpen(!cartIsOpen);
-        setMenuIsOpen(!menuIsOpen);
-        setLoginIsOpen();
-        /**/
         reloadDOMSelector();
         cartButton.classList.toggle('active');
         cart.classList.toggle('active');
         loginButton.classList.remove('active');
         loginForm.classList.remove('active');
+        searchForm.classList.remove('active');
+        searchButton.classList.remove('active');
         menu.classList.remove('active');
         menuContainer.classList.remove('active');
     }
