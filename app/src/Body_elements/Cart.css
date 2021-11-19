@@ -39,6 +39,16 @@
   grid-template-columns: repeat(auto-fit, minmax(30rem, 1fr));
 }
 
+
+.cart-container .products-container .box-container h4 {
+  font-size: 1.75rem;
+  font-style: italic;
+  color: #847eb8;
+  text-transform: none;
+  text-align: center;
+  padding: 3rem 0;
+}
+
 .cart-container .products-container .box-container .box{
   position: relative;
   border-radius: .5rem;
@@ -53,7 +63,7 @@
   right : 1rem ;top: .7rem;
   font-size: 2rem;
   cursor: pointer;
-  color: #d9d8e7;
+  color: #8f8f99;
 }
 .cart-container .products-container .box-container .box .fa-times:hover {
   color: black;

@@ -7,14 +7,14 @@ export default function FoodItem(props) {
     return (
         <div className="box">
             <div className="image">
-                <img src= {'/images/food/' + props.data.img} />
+                <img src= {'/images/food/' + props.data.img} alt=""/>
             </div>
             <div className="content">
                 <h3>{props.data.name}</h3>
                 <div class="stars">
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
-                    <i class="faheckout -b Minh_UIs fa-star"></i>
+                    <i class="fas fa-star"></i>
                     <i class="fas fa-star"></i>
                     <i class="fas fa-star-half-alt"></i>
                     <span> (50) </span>

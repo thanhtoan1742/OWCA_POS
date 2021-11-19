@@ -1,4 +1,4 @@
-import React, { useContext, useState } from 'react';
+import React, { useContext } from 'react';
 import SearchParam from '../../stores/SearchParam';
 import './CategoryBar.css';
 const categoryImagePath = '/images/category/'
@@ -52,7 +52,7 @@ function CategoryBar(props) {
 
     const checkCate={};
     searchParamCtx.param.forEach((p)=>{
-        if (p[0]=='category') checkCate[p[1]]=1;
+        if (p[0]==='category') checkCate[p[1]]=1;
     });
     
     return (

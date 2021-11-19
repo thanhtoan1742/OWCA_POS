@@ -2,21 +2,9 @@ import React, { useContext } from 'react';
 import './Cart.css';
 import CartContext from '../stores/cart-context'
 
-
 const foodImage = '/images/food/';
 
-
-
 function CartItem(props) {
-//     function updateQuantity(amount) {
-        // var quantity = document.getElementById("quantity");
-        // if (isNaN(parseInt(quantity.value))) {
-        //     console.log("Not a number");
-        // } else {
-        //     quantity.value = parseInt(quantity.value) + amount;
-        // }
-        
-    // }
     const CrtCtx = useContext(CartContext);
     function onHandleChange(event){
         console.log(event.target.value);
@@ -54,7 +42,7 @@ function Cart() {
                 <CartItem data={food} key={index}/>
             )
         })
-        : <h4>There is nothing to see here. Adding some food?</h4>
+        : <h4>there is nothing here...</h4>
     )
 
     return (
@@ -70,7 +58,7 @@ function Cart() {
                 <div class="box">
                     <h3 class="subtotal"> subtotal : <span>{CrtCtx.totalPrice.toLocaleString()} (VNĐ)</span> </h3>
                     <h3 class="total"> total : <span>{CrtCtx.totalPrice.toLocaleString()} (VNĐ)</span> </h3>
-                    <a href="#" class="btn">proceed to checkout</a>
+                    <a href="\#" class="btn">proceed to checkout</a>
                 </div>
             </div>
         </section>

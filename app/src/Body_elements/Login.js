@@ -1,7 +1,6 @@
 import React from 'react';
 import './Login.css'
 
-
 function Login() {
     return (
         <div class="login-form-container" id="login">
@@ -14,8 +13,8 @@ function Login() {
                     <label for="remember-me">remember me</label>
                 </div>
                 <input type="submit" value="login now" className="btn" />
-                <p>forget password? <a href="#">click here</a></p>
-                <p>don't have an account? <a href="#">create one</a></p>
+                <p>forget password? <a href="/#">Click here</a></p>
+                <p>don't have an account? <a href="/#">Create one</a></p>
             </form>
         </div>
     );

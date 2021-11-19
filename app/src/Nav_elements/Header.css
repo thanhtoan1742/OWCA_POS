@@ -3,7 +3,7 @@ header{
     position: sticky;
     top:0; left: 0; right:0;
     background: #fff;
-    padding:1rem 7%;
+    padding: 1rem 7%;
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -22,17 +22,18 @@ header .logo{
 header .logo img{
     width: 6rem;
 }
+
 header .navbar a{
     font-size: 1.7rem;
     border-radius: .5rem;
     padding:.5rem 1.5rem;
-    color:var(--light-color);
+    color: var(--light-color);
     margin-right: 2px;
 }
 
 header .navbar a.active,
 header .navbar a:hover{
-    color:#fff;
+    color: #fff;
     background: var(--yellow);
     cursor: pointer;
 }
@@ -42,10 +43,10 @@ header .icons{
 }
 header .icons div{
     cursor: pointer;
-    margin-left: .5rem;
-    height:4.5rem;
+    margin-left: .75rem;
+    width: 4.5rem;
+    height: 4.5rem;
     line-height: 4.5rem;
-    width:4.5rem;
     text-align: center;
     font-size: 1.7rem;
     color:var(--black);
@@ -54,12 +55,12 @@ header .icons div{
 }
 
 header .icons div:hover{
-    color:#fff;
+    color:#192a56;
     background: var(--yellow);
     transform: rotate(360deg);
 }
 
-header .icons #menu-btn{
+header .icons #nav-btn{
     display: none;
 } 
 
@@ -114,41 +115,24 @@ header .icons div.active
 
 }
 
-header .icons span{
+header .icons span {
     position: absolute;
     background: #ff0000;
     color: #fff;
-    font-size: 1rem;
+    font-size: 1.25rem;
     font-weight: bold;
-    width: 2rem;
-    height:2rem;
-    border-radius: 50%;
-    line-height: 2rem;
+    width: 2.25rem;
+    height: 2.25rem;
+    border-radius: 100%;
+    line-height: 2.3rem;
     text-align: center;
     right: 4.3rem;
-    top: -.5rem;
+    top: -.75rem;
 }
 
-  
-  /* .label-warning[href],
-  .badge-warning[href] {
-    background-color: #c67605;
-  } */
-/* #lblCartCount {
-    position: sticky;
-    font-size: 1em;
-    background: #ff0000;
-    color: #fff;
-    font-size: medium;
-    font-weight: bold;
-    padding: 0 0;
-    vertical-align: top;
-    left: 0em;
-    left: 0em;
-} */
-
-
-
+header .icons span.inactive {
+    display: none;
+}
 
 /* media queries  */
 @media (max-width:991px){/* medium device */
@@ -159,10 +143,10 @@ header .icons span{
 
 @media (max-width:768px){/* small device */
   
-    header .icons #menu-btn{
+    header .icons #nav-btn{
       display: inline-block;
     }
-    header .icons #menu-btn:focus{
+    header .icons #nav-btn:focus{
         background: var(--yellow);
     } 
     header .navbar{

@@ -13,7 +13,7 @@ const CartContext=createContext({
 })
 
 export function CartContextProvider(props){
-     const [userCart, SetUserCart]=useState([])
+     const [userCart, SetUserCart] = useState([])
 
     const context={
         cart:userCart,

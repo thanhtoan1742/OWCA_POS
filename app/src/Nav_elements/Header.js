@@ -1,27 +1,45 @@
 import React, { useState, useRef, useContext } from 'react';
 import './Header.css';
-import logo from '../images/logo.png';
-
 import CartContext from '../stores/cart-context';
 import SearchParam from '../stores/SearchParam';
 
+const logo = '/images/logo.png';
 
 function Header(props) {
-    const [ navbarIsOpen, setNavbarIsOpen ] = useState(false);
+    /*
+    const [ menuIsOpen, setMenuIsOpen ] = useState(false);
+    const [ loginIsOpen, setLoginIsOpen ] = useState(false);
+    const [ cartIsOpen, setCartIsOpen ] = useState(false);
+
+
+    /**/
     const searchParamCtx = useContext(SearchParam);
     const CrtCtx = useContext(CartContext);
 
-    // const login_btn = document.getElementById('login-btn');
-    // const login_form = document.getElementById('login');
-    // const cart_btn = document.getElementById('cart-btn');
-    // const cart = document.getElementById('cart');
-    // const navbar = document.querySelector('.navbar');
-    // const form_search = document.getElementById('search-form');
-    // const search_btn = document.getElementById('search-btn');
-    // const menu_btn = document.getElementById('menu-btn');
-    // const menu = document.getElementById('menu');
-    // const menu_container = document.getElementById('menu-container');
     const searchInput = useRef();
+
+    var loginButton, loginForm;
+    var cartButton, cart;
+    var navbar, navButton;
+    var searchForm, searchButton;
+    var menu, menuContainer;
+
+    function reloadDOMSelector() {
+        loginButton = document.getElementById('login-btn');
+        loginForm = document.getElementById('login');
+        cartButton = document.getElementById('cart-btn');
+        cart = document.getElementById('cart');
+        navbar = document.querySelector('.navbar');
+        searchForm = document.getElementById('search-form');
+        searchButton = document.getElementById('search-btn');
+        navButton = document.getElementById('nav-btn');
+        menu = document.getElementById('menu');
+        menuContainer = document.getElementById('menu-container');
+    }
+
+    /*
+    function switchState
+    */
 
     function searchHandler(event){
         event.preventDefault();
@@ -31,94 +49,89 @@ function Header(props) {
         searchParamCtx.setName(searchInput.current.value)
     }
 
-    function Menu_handle() {
-        let navbar = document.querySelector('.navbar');
-        let form_search = document.getElementById('search-form');
-        let search_btn = document.getElementById('search-btn');
-        let menu_btn = document.getElementById('menu-btn');
+    function Nav_handle() {
+        /*
+        
+        */
+        reloadDOMSelector();
         navbar.classList.toggle('active');
-        form_search.classList.remove('active');
-        search_btn.classList.remove('active');
-        menu_btn.classList.toggle('active');
+        navButton.classList.toggle('active');
+        searchForm.classList.remove('active');
+        searchButton.classList.remove('active');
     }
     function Search_handle(){
-        let form_search = document.getElementById('search-form');
-        let search_btn = document.getElementById('search-btn');
-        form_search.classList.toggle('active');
-        search_btn.classList.toggle('active');
+        /*
+        if (menuIsOpen) {
+            // Code
+        }
+        /**/
+        reloadDOMSelector();
+        searchForm.classList.toggle('active');
+        searchButton.classList.toggle('active');
     }
     function Cart_handle() {
-        let login_btn = document.getElementById('login-btn');
-        let login_form = document.getElementById('login');
-        let cart_btn = document.getElementById('cart-btn');
-        let cart = document.getElementById('cart');
-        let menu = document.getElementById('menu');
-        let menu_container = document.getElementById('menu-container');
-        cart_btn.classList.toggle('active');
+        /*
+        let menuIsOpen_old = menuIsOpen;
+        let 
+        setCartIsOpen(!cartIsOpen);
+        setMenuIsOpen(!menuIsOpen);
+        setLoginIsOpen();
+        /**/
+        reloadDOMSelector();
+        cartButton.classList.toggle('active');
         cart.classList.toggle('active');
-        login_btn.classList.remove('active');
-        login_form.classList.remove('active');
+        loginButton.classList.remove('active');
+        loginForm.classList.remove('active');
         menu.classList.remove('active');
-        menu_container.classList.remove('active');
+        menuContainer.classList.remove('active');
     }
     function Login_handle() {
-        let login_btn = document.getElementById('login-btn');
-        let login_form = document.getElementById('login');
-        let cart_btn = document.getElementById('cart-btn');
-        let cart = document.getElementById('cart');
-        let navbar = document.querySelector('.navbar');
-        let menu_btn = document.getElementById('menu-btn');
-        let menu = document.getElementById('menu');
-        let menu_container = document.getElementById('menu-container');
-        login_btn.classList.toggle('active');
-        login_form.classList.toggle('active');
-        cart_btn.classList.remove('active');
+        reloadDOMSelector();
+        loginButton.classList.toggle('active');
+        loginForm.classList.toggle('active');
+        searchForm.classList.remove('active');
+        searchButton.classList.remove('active');
+        cartButton.classList.remove('active');
         cart.classList.remove('active');
         navbar.classList.remove('active');
-        menu_btn.classList.remove('active');
+        navButton.classList.remove('active');
         menu.classList.remove('active');
-        menu_container.classList.remove('active');
+        menuContainer.classList.remove('active');
     }
-    function Body_handle() {
-        let login_btn = document.getElementById('login-btn');
-        let login_form = document.getElementById('login');
-        let cart_btn = document.getElementById('cart-btn');
-        let cart = document.getElementById('cart');
-        let navbar = document.querySelector('.navbar');
-        let menu_btn = document.getElementById('menu-btn');
-        let menu = document.getElementById('menu');
-        let menu_container = document.getElementById('menu-container');
-        login_btn.classList.remove('active');
-        login_form.classList.remove('active');
-        cart_btn.classList.remove('active');
+    function Menu_handle() {
+        reloadDOMSelector();
+        loginButton.classList.remove('active');
+        loginForm.classList.remove('active');
+        cartButton.classList.remove('active');
         cart.classList.remove('active');
         navbar.classList.remove('active');
-        menu_btn.classList.remove('active');
+        navButton.classList.remove('active');
         menu.classList.toggle('active');
-        menu_container.classList.toggle('active');
+        menuContainer.classList.toggle('active');
     }
 
     return (
         <header className = 'header'>
-            <a href="#home" className="logo"> <img src = {logo}/> OWCA </a>
-            <nav id = "nav-nav" className="navbar">
-                <a href = "#">Home</a>
-                <a href = "#category" onClick = {Body_handle} id = 'menu'>Menu</a>
-                <a href = "#">Reservation</a>
-                <a href = "#">About</a>
-                <a href = "#">Review</a>
-                <a href = "#">Order</a>
+            <a href="#home" className="logo"> <img src = {logo} alt=""/>OWCA</a>
+            <nav id = "nav-nav" className="navbar" ref={navbar}>
+                <a href="/#">Home</a>
+                <a href="#category" onClick={Menu_handle} id='menu'>Menu</a>
+                <a href="/#">Reservation</a>
+                <a href="/#">About</a>
+                <a href="/#">Review</a>
+                <a href="/#">Order</a>
             </nav>
             <div className="icons">
-                <div id="menu-btn" onClick = {Menu_handle} className="fas fa-bars"></div>
-                <div id="search-btn" onClick = {Search_handle} className="fas fa-search"></div>
-                <div id="cart-btn" onClick = {Cart_handle} className="fas fa-shopping-cart">
+                <div id="nav-btn" onClick={Nav_handle} className="fas fa-bars" ref={navButton}></div>
+                <div id="search-btn" onClick={Search_handle} className="fas fa-search" ref={searchButton}></div>
+                <div id="cart-btn" onClick={Cart_handle} className="fas fa-shopping-cart" ref={cartButton}>
                 </div>
-                <span className='badge badge-warning' id='lblCartCount'>{CrtCtx.totalItem}</span>
+                <span className={CrtCtx.totalItem ? "badge badge-warning" : "badge badge-warning inactive"}
+                    id="lblCartCount">{CrtCtx.totalItem}</span>
                 
-                <div id="login-btn" onClick = {Login_handle} className="fas fa-user"></div>
+                <div id="login-btn" onClick={Login_handle} className="fas fa-user" ref={loginButton}></div>
             </div>
-            <form action="" id="search-form" onSubmit={searchHandler}>
+            <form action="" id="search-form" onSubmit={searchHandler} ref={searchForm}>
                 <input type="search" placeholder="Search..." id="search-box" ref={searchInput}/>
                 <button><label for="search-box" className="fas fa-search"></label></button>
             </form>
