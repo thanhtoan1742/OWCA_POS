@@ -1,16 +1,20 @@
 import React from 'react';
+// import Home from './Body_elements/Home';
 import Menu from './Body_elements/Menu';
 import Cart from './Body_elements/Cart';
-import Payment from './Body_elements/Payment'
+// import Payment from './Body_elements/Payment'
+import Login from './Body_elements/Login';
 import './Body.css';
 
 
 function Body() {
     return (
-        <div class = "body">
+        <div className="body">
+            {/* <Home/> */}
             <Menu/>
             <Cart />
-            <Payment />
+            {/* <Payment /> */}
+            <Login />
         </div>
     );
 }

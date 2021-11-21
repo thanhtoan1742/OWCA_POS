@@ -20,7 +20,7 @@
 }
 .product .title span{
     font-size: 2.5rem;
-    color: var(--yellow);
+    color: var(--orange);
 }
 
 .product .food-container{
@@ -47,7 +47,7 @@
     color:#130f40;
 }
 .product .food-container .box .content .stars{
-    color: gold;
+    color: var(--yellow);
     font-size: 1.6rem;
     padding: 1rem 0;
 }

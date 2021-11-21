@@ -121,7 +121,7 @@ const foodlist=[
 function Menu() {
     const searchParamCtx=useContext(SearchParam);
     return (
-        <div id = "menu-container">
+        <div id="menu-container">
             <CategoryBar />
             <FoodGrid foodlist={
                 foodlist.filter((food)=>{ return (searchParamCtx.isRightFood(food));}) 
