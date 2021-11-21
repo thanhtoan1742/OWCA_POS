@@ -5,7 +5,7 @@ const categoryImagePath = '/images/category/'
 
 function CategoryItem(props) {
     const searchParamCtx=props.searchParamCtx;
-    const style = {background: 'var(--yellow)'};
+    const style = {background: 'var(--orange)'};
 
     return (
         <a href={props.href} id={props.data.id} onClick={()=>{
@@ -13,7 +13,7 @@ function CategoryItem(props) {
                 searchParamCtx.clearFilter();
                 searchParamCtx.addFilter('category',props.data.text);
             }
-        } class="box" style={props.data.text in props.checkCate?style:{}}  >
+        } className="box" style={props.data.text in props.checkCate?style:{}}  >
             <img src={categoryImagePath + props.data.src} alt={props.data.children}/>
             <h3>{props.children}</h3>
         </a>
@@ -56,12 +56,12 @@ function CategoryBar(props) {
     });
     
     return (
-        <section class="category" id = "category">
-            <h1 class="title"> our <span>category</span></h1>
-            <div class="box-container">
+        <section className="category" id="category">
+            <h1 className="title"> our <span>category</span></h1>
+            <div className="box-container">
                 {cateList.map((item)=>
                 {
-                   return <CategoryItem data={item} href="#" checkCate={checkCate} searchParamCtx={searchParamCtx}> {item.text} </CategoryItem>
+                   return <CategoryItem key={item.text} data={item} href="#" checkCate={checkCate} searchParamCtx={searchParamCtx}> {item.text} </CategoryItem>
                 })}
             </div>
         </section>

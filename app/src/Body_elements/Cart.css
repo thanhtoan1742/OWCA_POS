@@ -123,11 +123,11 @@
   font-size: 1.7rem;
   cursor: pointer;
   color: #fff;
-  background: var(--yellow);
+  background: var(--orange);
   border-radius: .7rem;
 }
 
 .btn:hover {
-  background: var(--green);
+  background: var(--dark-green);
 }
 

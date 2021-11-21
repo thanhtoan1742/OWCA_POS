@@ -7,7 +7,7 @@
 }
 .category .title span{
     font-size: 2.5rem;
-    color: var(--yellow);
+    color: var(--orange);
 }
 .category .box-container{
     display: grid;
@@ -26,7 +26,7 @@
 }
 
 .category .box-container .box:hover{
-    background: var(--yellow);
+    background: var(--orange);
 }
 .category .box-container .box:hover h3{
     color: white;

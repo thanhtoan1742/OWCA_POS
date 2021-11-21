@@ -50,23 +50,30 @@ function Header(props) {
         if (menu.classList.contains("active")) {
             searchForm.classList.toggle('active');
             searchButton.classList.toggle('active');
+            navbar.classList.remove('active');
+            navButton.classList.remove('active');
         }
     }
     function Cart_handle() {
         reloadDOMSelector();
         cartButton.classList.toggle('active');
         cart.classList.toggle('active');
+        if (cartButton.classList.contains("active")) {
+            menu.classList.remove('active');
+            menuContainer.classList.remove('active');
+        } else {
+            menu.classList.add('active');
+            menuContainer.classList.add('active');
+        }
         loginButton.classList.remove('active');
         loginForm.classList.remove('active');
         searchForm.classList.remove('active');
         searchButton.classList.remove('active');
-        menu.classList.remove('active');
-        menuContainer.classList.remove('active');
     }
     function Login_handle() {
         reloadDOMSelector();
-        loginButton.classList.toggle('active');
-        loginForm.classList.toggle('active');
+        loginButton.classList.add('active');
+        loginForm.classList.add('active');
         searchForm.classList.remove('active');
         searchButton.classList.remove('active');
         cartButton.classList.remove('active');
@@ -84,16 +91,16 @@ function Header(props) {
         cart.classList.remove('active');
         navbar.classList.remove('active');
         navButton.classList.remove('active');
-        menu.classList.toggle('active');
-        menuContainer.classList.toggle('active');
+        menu.classList.add('active');
+        menuContainer.classList.add('active');
     }
 
     return (
         <header className = 'header'>
-            <a href="#home" className="logo"> <img src = {logo} alt=""/>OWCA</a>
+            <a href="#home" className="logo"> <img src={logo} alt=""/>OWCA</a>
             <nav id = "nav-nav" className="navbar" ref={navbar}>
                 <a href="/#">Home</a>
-                <a href="#category" onClick={Menu_handle} id='menu'>Menu</a>
+                <a href="#menu" onClick={Menu_handle} id='menu'>Menu</a>
                 <a href="/#">Reservation</a>
                 <a href="/#">About</a>
                 <a href="/#">Review</a>
@@ -111,7 +118,7 @@ function Header(props) {
             </div>
             <form action="" id="search-form" onSubmit={searchHandler} ref={searchForm}>
                 <input type="search" placeholder="Search..." id="search-box" ref={searchInput}/>
-                <button><label for="search-box" className="fas fa-search"></label></button>
+                <button><label htmlFor="search-box" className="fas fa-search"></label></button>
             </form>
         </header>
     );

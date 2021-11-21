@@ -4,8 +4,8 @@ import FoodItem from './FoodItem';
 
 function FoodGrid(props){ 
     return (
-        <div class = "food-grid">
-            <section id="pizza" class = "product">
+        <div className="food-grid">
+            <section id="pizza" className="product">
             <h1 className="title">our <span>products</span></h1>
             <div className="food-container">
             

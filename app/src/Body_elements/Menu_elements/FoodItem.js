@@ -11,12 +11,12 @@ export default function FoodItem(props) {
             </div>
             <div className="content">
                 <h3>{props.data.name}</h3>
-                <div class="stars">
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star"></i>
-                    <i class="fas fa-star-half-alt"></i>
+                <div className="stars">
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star"></i>
+                    <i className="fas fa-star-half-alt"></i>
                     <span> (50) </span>
                 </div>
                 <div className="price">{props.data.price.toLocaleString()} <span>{n.toLocaleString()}(VNĐ)</span></div>
