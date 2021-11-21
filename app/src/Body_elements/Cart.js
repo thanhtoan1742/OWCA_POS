@@ -42,7 +42,7 @@ function Cart() {
                 <CartItem data={food} key={index}/>
             )
         })
-        : <h4>you didn't add anything yet...</h4>
+        : <h4>There is nothing here...</h4>
     )
 
     return (
